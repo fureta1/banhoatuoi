@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+﻿<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
@@ -786,7 +786,7 @@
         <div class="contact-line">
             <div class="contact-item">
                 <i class="fas fa-phone-alt"></i>
-                <strong>Hotline:</strong> 079 886 4360
+                <strong>Hotline:</strong> 0335422157
             </div>
             <div class="contact-item">
                 <i class="fab fa-facebook-messenger"></i>
@@ -798,3 +798,4 @@
 
 </body>
 </html>
+

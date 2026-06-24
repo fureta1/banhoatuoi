@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+﻿<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
@@ -920,18 +920,18 @@
         </div>
     </div>
 </div>
-                <!-- THÔNG TIN CHUYỂN KHOẢN NGÂN HÀNG (hiện khi chọn chuyển khoản) -->
+                <!-- THÔNG TIN CHUYỂN KHOẢN NGN HÀNG (hiện khi chọn chuyển khoản) -->
 <div id="bankTransferInfo" class="bank-transfer-info" style="display:none;">
     <div class="bank-transfer-card">
         <div class="bank-qr">
             <img src="${ctx}/images/bank/bank-qr.jpg"
-                 alt="Mã QR chuyển khoản ngân hàng">
+                 alt="QR chuyển khoản Chu The Duy">
         </div>
         <div class="bank-details">
             <h2><i class="fas fa-qrcode"></i> Thanh toán chuyển khoản ngân hàng</h2>
-            <p><strong>Ngân hàng:</strong> BIDV (Ngân hàng Đầu tư và Phát Triển Việt Nam</p>
-            <p><strong>Chủ tài khoản:</strong> Hà Thành Tuân </p>
-            <p><strong>Số tài khoản:</strong> 2601644044 </p>
+            <p><strong>Ngân hàng:</strong> VietQR</p>
+            <p><strong>Chủ tài khoản:</strong> Chu The Duy </p>
+            <p><strong>Số tài khoản:</strong> 0335422157 </p>
             <p><strong>Nội dung chuyển khoản:</strong> Họ tên + SĐT người nhận</p>
             <p style="margin-top:8px;">
                 Sau khi bạn chuyển khoản thành công, đơn hàng sẽ được ghi nhận
@@ -1059,7 +1059,7 @@
         <div class="contact-line">
             <div class="contact-item">
                 <i class="fas fa-phone-alt"></i>
-                <strong>Hotline:</strong> 079 886 4360
+                <strong>Hotline:</strong> 0335422157
             </div>
             <div class="contact-item">
                 <i class="fab fa-facebook-messenger"></i>
@@ -1114,3 +1114,5 @@
 </body>
 </html>
 </html>
+
+

@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+﻿<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
@@ -144,7 +144,7 @@
             <th>Mã đơn</th>
             <th>Khách hàng / Người nhận</th>
             <th>SĐT</th>
-            <th class="text-right">Tổng tiền (₫)</th>
+            <th class="text-right">Tổng tiền (â‚«)</th>
             <th>Thanh toán</th>
             <th>Trạng thái</th>
             <th class="text-center">Chi tiết</th>
@@ -206,3 +206,4 @@
     </table>
 
 </div>
+

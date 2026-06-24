@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+﻿<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
@@ -233,9 +233,9 @@
             <tr>
                 <th>#</th>
                 <th>Sản phẩm</th>
-                <th class="text-right">Đơn giá (₫)</th>
+                <th class="text-right">Đơn giá (â‚«)</th>
                 <th class="text-right">Số lượng</th>
-                <th class="text-right">Thành tiền (₫)</th>
+                <th class="text-right">Thành tiền (â‚«)</th>
             </tr>
             </thead>
             <tbody>
@@ -269,21 +269,21 @@
             <span class="info-label">Tạm tính:</span>
             <span class="text-right">
                 <fmt:formatNumber value="${order.subtotal}" type="number"
-                                  minFractionDigits="0" maxFractionDigits="0" /> ₫
+                                  minFractionDigits="0" maxFractionDigits="0" /> â‚«
             </span>
         </div>
         <div class="info-row">
             <span class="info-label">Phí vận chuyển:</span>
             <span class="text-right">
                 <fmt:formatNumber value="${order.shippingFee}" type="number"
-                                  minFractionDigits="0" maxFractionDigits="0" /> ₫
+                                  minFractionDigits="0" maxFractionDigits="0" /> â‚«
             </span>
         </div>
         <div class="info-row">
             <span class="info-label">Giảm giá:</span>
             <span class="text-right">
                 <fmt:formatNumber value="${order.discountAmount}" type="number"
-                                  minFractionDigits="0" maxFractionDigits="0" /> ₫
+                                  minFractionDigits="0" maxFractionDigits="0" /> â‚«
             </span>
         </div>
         <hr/>
@@ -292,10 +292,11 @@
             <span class="text-right">
                 <b>
                     <fmt:formatNumber value="${order.totalAmount}" type="number"
-                                      minFractionDigits="0" maxFractionDigits="0" /> ₫
+                                      minFractionDigits="0" maxFractionDigits="0" /> â‚«
                 </b>
             </span>
         </div>
     </div>
 </div>
+
 

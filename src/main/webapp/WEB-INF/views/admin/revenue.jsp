@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+﻿<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
@@ -237,7 +237,7 @@
         <div class="card">
             <div class="card-title">Doanh thu trong khoảng</div>
             <div class="card-value">
-                <fmt:formatNumber value="${totalRevenue}" type="number" minFractionDigits="0" maxFractionDigits="0"/> ₫
+                <fmt:formatNumber value="${totalRevenue}" type="number" minFractionDigits="0" maxFractionDigits="0"/> â‚«
             </div>
             <div class="card-sub">
                 Từ ${fromDate} đến ${toDate}
@@ -246,7 +246,7 @@
         <div class="card">
             <div class="card-title">Tổng doanh thu tháng</div>
             <div class="card-value">
-                <fmt:formatNumber value="${monthlyRevenue}" type="number" minFractionDigits="0" maxFractionDigits="0"/> ₫
+                <fmt:formatNumber value="${monthlyRevenue}" type="number" minFractionDigits="0" maxFractionDigits="0"/> â‚«
             </div>
             <div class="card-sub">
                 Tháng ${toDate.monthValue} / ${toDate.year}
@@ -255,7 +255,7 @@
         <div class="card">
             <div class="card-title">Tổng doanh thu năm</div>
             <div class="card-value">
-                <fmt:formatNumber value="${yearlyRevenue}" type="number" minFractionDigits="0" maxFractionDigits="0"/> ₫
+                <fmt:formatNumber value="${yearlyRevenue}" type="number" minFractionDigits="0" maxFractionDigits="0"/> â‚«
             </div>
             <div class="card-sub">
                 Năm ${toDate.year}
@@ -309,7 +309,7 @@
                         </td>
                         <td class="text-right">${p.totalSold}</td>
                         <td class="text-right">
-                            <fmt:formatNumber value="${p.totalRevenue}" type="number" minFractionDigits="0" maxFractionDigits="0"/> ₫
+                            <fmt:formatNumber value="${p.totalRevenue}" type="number" minFractionDigits="0" maxFractionDigits="0"/> â‚«
                         </td>
                     </tr>
                 </c:forEach>
@@ -324,7 +324,7 @@
         <thead>
         <tr>
             <th>Ngày</th>
-            <th class="text-right">Doanh thu (₫)</th>
+            <th class="text-right">Doanh thu (â‚«)</th>
             <th class="text-right">Số đơn</th>
             <th class="text-right">Đơn thành công</th>
             <th class="text-right">Đơn hủy</th>
@@ -386,7 +386,7 @@
             data: {
                 labels: labels,
                 datasets: [{
-                    label: 'Doanh thu (₫)',
+                    label: 'Doanh thu (â‚«)',
                     data: dataRevenue,
                     fill: false,
                     tension: 0.2
@@ -410,3 +410,4 @@
 
 </body>
 </html>
+

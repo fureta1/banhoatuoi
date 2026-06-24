@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+﻿<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
@@ -700,12 +700,22 @@
     <div class="top-section">
         <!-- Banner Slider -->
         <div class="banner-slider">
-            <c:forEach var="b" items="${banners}" varStatus="st">
-                <div class="banner-slide ${st.index == 0 ? 'active' : ''}">
-                    <img src="${pageContext.request.contextPath}/images/banners/${b.imageUrl}"
-                         alt="${b.title}">
-                </div>
-            </c:forEach>
+            <c:choose>
+                <c:when test="${not empty banners}">
+                    <c:forEach var="b" items="${banners}" varStatus="st">
+                        <div class="banner-slide ${st.index == 0 ? 'active' : ''}">
+                            <img src="${pageContext.request.contextPath}/images/banners/${b.imageUrl}"
+                                 alt="${b.title}">
+                        </div>
+                    </c:forEach>
+                </c:when>
+                <c:otherwise>
+                    <div class="banner-slide active">
+                        <img src="${pageContext.request.contextPath}/images/banners/1764081327303_banner1.jpg"
+                             alt="FlowerShop banner">
+                    </div>
+                </c:otherwise>
+            </c:choose>
         </div>
 
         <!-- Advice Box -->
@@ -919,7 +929,7 @@
         <div class="contact-line">
             <div class="contact-item">
                 <i class="fas fa-phone-alt"></i>
-                <strong>Hotline:</strong> 079 886 4360
+                <strong>Hotline:</strong> 0335422157
             </div>
             <div class="contact-item">
                 <i class="fab fa-facebook-messenger"></i>
@@ -950,3 +960,4 @@
 
 </body>
 </html>
+

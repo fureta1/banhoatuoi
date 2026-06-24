@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+﻿<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <c:set var="activePage" value="contacts" />
@@ -193,7 +193,7 @@
                                 -
                             </c:when>
                             <c:otherwise>
-                                ${c.rating} ⭐
+                                ${c.rating} â­
                             </c:otherwise>
                         </c:choose>
                     </td>
@@ -238,3 +238,4 @@
 
 </body>
 </html>
+
